@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'python3 hola.py'  // Asegúrate de que el archivo .py exista
+                sh 'python3 hola.py'
             }
         }
         stage('Test') {
