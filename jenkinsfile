@@ -5,16 +5,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'python3 hola.py'  // Asegúrate de que el archivo .py exista
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh 'python3 hola.py'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh 'python3 hola.py'
             }
         }
     }
